@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html class="scroll-smooth">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link rel="icon" href="images/fevicon/fevicon.png" type="image/gif" />
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+
+    <title>Rolex</title>
+    <!-- <link rel="stylesheet" href="css/style.css" /> -->
+    <link href="./output.css" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link href="css/font-awesome.min.css" rel="stylesheet" />
+    <!-- <link rel="stylesheet" href="css/bootstrap.min.css" /> -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
+    />
+  </head>
+  <body class="font-['Roboto, sans-serif']">
+    <header>
+      <nav class="bg-white">
+        <div
+          class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-2"
+        >
+          <a
+            href="index.html"
+            class="flex items-center space-x-3 rtl:space-x-reverse"
+          >
+            <img
+              src="images/logo.png"
+              class="h-[10vh]"
+              alt="Flowbite Logo"
+            />
+          </a>
+          <button
+            id="menu-btn"
+            type="button"
+            class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-white rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+            aria-controls="navbar-default"
+            aria-expanded="false"
+          >
+            <span class="sr-only">Open main menu</span>
+            <svg
+              class="w-5 h-5"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 17 14"
+            >
+              <path
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M1 1h15M1 7h15M1 13h15"
+              />
+            </svg>
+          </button>
+          <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+            <ul
+              class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white"
+            >
+              <li>
+                <a
+                  href="index.html"
+                  class="block py-2 px-3 text-[#006039] rounded md:bg-transparent md:p-0 hover:text-[#a37e2c]"
+                  aria-current="page"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a
+                  href="about.html"
+                  class="block py-2 px-3 text-[#006039] rounded md:bg-transparent md:p-0 hover:text-[#a37e2c]"
+                  aria-current="page"
+                  >About</a
+                >
+              </li>
+              <li>
+                <a
+                  href="contact.html"
+                  class="block py-2 px-3 text-[#006039] rounded md:bg-transparent md:p-0 hover:text-[#a37e2c]"
+                  aria-current="page"
+                  >Contact</a
+                >
+              </li>
+              <li>
+                <a
+                  href="products.html"
+                  class="block py-2 px-3 text-[#006039] rounded md:bg-transparent md:p-0 hover:text-[#a37e2c]"
+                  aria-current="page"
+                  >Products</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+
+
+      <section id="contact-section" class="mt-[80px] bg-[#E9E9E9]">
+        <div
+          class="label bg-[#a37e2c] text-white p-[9px_19px] lg:max-w-[18%] lg:ml-[13vh] text-center font-bold text-15px lg:text-[23px]"
+        >
+          <span>Contact Us</span>
+        </div>
+        <div
+          class="contact-container grid lg:grid-cols-2 grid-cols-1 gap-40 p-[50px] items-start"
+        >
+          <!-- Form Container -->
+          <div class="form-container lg:ml-6">
+            <form action="">
+              <div>
+                <input
+                  type="text"
+                  class="w-[100%] m-[10px_0] p-[10px] border-none shadow-lg rounded-xl focus:outline-none focus:ring-0 focus:border-transparent"
+                  placeholder="Your Name"
+                />
+              </div>
+              <div>
+                <input
+                  type="text"
+                  class="w-[100%] m-[10px_0] p-[10px] border-none shadow-lg rounded-xl focus:outline-none focus:ring-0 focus:border-transparent"
+                  placeholder="Phone Number"
+                />
+              </div>
+              <div>
+                <input
+                  type="email"
+                  class="w-[100%] m-[10px_0] p-[10px] border-none shadow-lg rounded-xl focus:outline-none focus:ring-0 focus:border-transparent"
+                  placeholder="Email"
+                />
+              </div>
+              <div>
+                <textarea
+                  name=""
+                  rows="4"
+                  class="w-[100%] m-[10px_0] p-[10px] border-none shadow-lg rounded-b-xl focus:outline-none focus:ring-0 focus:border-transparent"
+                  placeholder="Message"
+                ></textarea>
+              </div>
+              <div class="btn_box flex justify-center lg:justify-start">
+                <a
+                  href="#"
+                  class="text-[1rem] p-[0.75rem_2rem] xs:p-[0.75rem_3rem] text-white ml-[10px] bg-[#00472d] rounded-lg hover:bg-[#a37e2c]"
+                  >Contact Us</a
+                >
+              </div>
+            </form>
+          </div>
+          <!-- Map Container -->
+          <div class="map-container hidden lg:block">
+            <div id="mapid" class="w-100% h-[400px]"></div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-container w-full bg-[#0f1521] text-white py-[60px]">
+        <!-- Footer Heading -->
+        <div class="footer-heading">
+          <h2 class="text-center lg:text-[3rem] text-[1.5rem]">Rolex</h2>
+        </div>
+        <!-- Divider -->
+        <hr class="lg:mx-[140px] my-[20px] border-t border-white">
+        <!-- Footer Content -->
+        <div class="footer-content grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-[20px] lg:px-[80px] px-[30px]">
+          <!-- About Shop Section -->
+          <div class="about">
+            <h5 class="text-[1.5rem] mb-[10px]">About Shop</h5>
+            <div class="about-content flex items-start gap-[20px]">
+              <div class="flex flex-col items-center justify-center">
+                <img src="images/location.png" class="h-[4vh] mb-[20px]" alt="Location" />
+                <img src="images/telephone-white.png" class="h-[4vh] mb-[20px]" alt="Telephone" />
+                <img src="images/envelope-white.png" class="h-[3vh] mb-[20px]" alt="Envelope" />
+              </div>
+              <div class="flex flex-col justify-center">
+                <p class="mb-[20px]">Pakistan</p>
+                <p class="mb-[20px]">+923904055010</p>
+                <p class="mb-[20px]">rolex@mail.com</p>
+              </div>
+            </div>
+          </div>
+          <!-- Information Section -->
+          <div class="information">
+            <h5 class="text-[1.5rem] mb-[10px]">Information</h5>
+            <p class="text-left">
+              The Rolex collection offers a wide range of prestigious, high-precision timepieces,
+              from Professional to Classic models to suit any wrist.
+            </p>
+          </div>
+          <!-- Menu Section -->
+          <div class="menu">
+            <h5 class="text-[1.5rem] mb-[10px]">Menu</h5>
+            <ul class="font-medium flex flex-col space-y-[10px]">
+              <li><a href="index.html" class="text-white hover:text-gray-300">Home</a></li>
+              <li><a href="about.html" class="text-white hover:text-gray-300">About</a></li>
+              <li><a href="contact.html" class="text-white hover:text-gray-300">Contact</a></li>
+              <li><a href="products.html" class="text-white hover:text-gray-300">Products</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- Footer Bottom -->
+      <div class="py-[30px] bg-[#ffffff] text-center">
+        <p>&copy 2024 All Rights Reserved By Rolex | Created By Aaqil Sohail</p>
+      </div>
+    </footer>
+    
+    <script
+      src="https://kit.fontawesome.com/a076d05399.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/app.js"></script>
+    <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script>
+      var map = L.map("mapid").setView([51.505, -0.09], 13); // Coordinates for the map center
+
+      L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+        maxZoom: 19,
+        attribution: "© OpenStreetMap contributors",
+      }).addTo(map);
+
+      // Add a marker
+      var marker = L.marker([51.505, -0.09]).addTo(map);
+      marker.bindPopup("<b>Hello world!</b><br>I am a popup.").openPopup();
+    </script>
+  </body>
+</html>
